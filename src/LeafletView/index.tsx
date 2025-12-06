@@ -18,10 +18,10 @@ import {
 } from 'react-native-webview/lib/WebViewTypes';
 import LoadingIndicator from '../LoadingIndicator';
 
-const LEAFLET_HTML_SOURCE = Platform.select({
-  ios: require('../../../android/src/main/assets/leaflet.html'),
-  android: { uri: 'file:///android_asset/leaflet.html' },
-});
+// const LEAFLET_HTML_SOURCE = Platform.select({
+//   ios: require('../../../android/src/main/assets/leaflet.html'),
+//   android: { uri: 'file:///android_asset/leaflet.html' },
+// });
 
 const DEFAULT_MAP_LAYERS = [
   {
@@ -262,7 +262,7 @@ const LeafletView: React.FC<LeafletViewProps> = ({
       onError={onError}
       originWhitelist={['*']}
       renderLoading={renderLoading}
-      source={source || LEAFLET_HTML_SOURCE}
+      source={source}
       allowFileAccess={true}
       allowUniversalAccessFromFileURLs={true}
       allowFileAccessFromFileURLs={true}
