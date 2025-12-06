@@ -11,12 +11,12 @@ import {
   OWN_POSTION_MARKER_ID,
 } from './types';
 import { LatLng } from 'react-leaflet';
-import { NativeSyntheticEvent, Platform, StyleSheet } from 'react-native';
+import { NativeSyntheticEvent, StyleSheet } from 'react-native';
 import {
   WebViewError,
   WebViewMessageEvent,
 } from 'react-native-webview/lib/WebViewTypes';
-import LoadingIndicator from '../LoadingIndicator';
+import LoadingIndicator from '../LoadingIndicator'
 
 const DEFAULT_MAP_LAYERS = [
   {
